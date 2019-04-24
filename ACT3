@@ -1,0 +1,48 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int day, month, year;
+
+	cout << "Please Type Month Number: ";
+	cin >> month;
+
+	cout << "Please Type Day: ";
+	cin >> day;
+
+	cout << "Please Type Year: ";
+	cin >> year;
+
+	if (month==1 && day<=31)
+		cout << "January " << day << ", " << year << endl;
+	else if (month==2 && day<=28)
+		cout << "February " << day << ", " << year << endl;
+	else if (month==3 && day<=31)
+		cout << "March " << day << ", " << year << endl;
+	else if (month==4 && day<=30)
+		cout << "April " << day << ", " << year << endl;
+	else if (month==5 && day<=31)
+		cout << "May " << day << ", " << year << endl;
+	else if (month==6 && day<=30)
+		cout << "June " << day << ", " << year << endl;
+	else if (month==7 && day<=31)
+		cout << "July " << day << ", " << year << endl;
+	else if (month==8 && day<=31)
+		cout << "August " << day << ", " << year << endl;
+	else if (month==9 && day<=30)
+		cout << "September " << day << ", " << year << endl;
+	else if (month==10 && day<=31)
+		cout << "October " << day << ", " << year << endl;
+	else if (month==11 && day<=30)
+		cout << "November " << day << ", " << year << endl;
+	else if (month==12 && day<=31)
+		cout << "December " << day << ", " << year << endl;
+	else
+		cout << "Invalid Date!" << endl;
+		
+	_getch();
+	return 0;
+}
